@@ -31,8 +31,7 @@ Route::middleware('auth')->group(function() {
     Route::post('/ayam/tambah', 'AyamController@proses');
     Route::get('/ayam/hapus/{id}', 'AyamController@hapus');
 
-    //Untuk melakukan Sync Database
-    Route::get('/sync', 'SyncController@index');
+    
 
     //Melakukan Penjualan Ayam
 

@@ -87,7 +87,6 @@
                             <button type="button" tabindex="0" class="dropdown-item">User
                             Account</button>
                             <button type="button" tabindex="0" class="dropdown-item">Settings</button>
-                            <a href="/sync" class="dropdown-item" tabindex="0">Sync</a>
                         </div>
                     </div>
                 </div>
