@@ -12,6 +12,7 @@ class AyamController extends Controller
         $data = [
             'ayam' => Ayam::all()
         ];
+        flash('Data Telah Ditambahkan')->success();
         return view('ayam', $data);
     }
     public function tambah()
@@ -27,6 +28,6 @@ class AyamController extends Controller
     	$ayam->panen = $request->panen;
     	$ayam->save();
     	flash('Record Berhasil Ditambahkan')->important();
-    	redirect('/ayam');
+    	return redirect('/ayam');
     }
 }

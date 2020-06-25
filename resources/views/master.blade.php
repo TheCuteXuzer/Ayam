@@ -28,7 +28,6 @@
 
 <body>
     @include('sweet::alert')
-    @include('flash::message')
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
             <div class="app-header__logo">
@@ -564,6 +563,11 @@ data-class="bg-happy-green sidebar-text-light">
 </div>
 <div class="app-main__outer">
     <div class="app-main__inner">
+        <div class="app-page-title">
+            
+                @include('flash::message')
+            
+        </div>
         @yield('content')
         <div class="app-wrapper-footer">
             <div class="app-footer">
