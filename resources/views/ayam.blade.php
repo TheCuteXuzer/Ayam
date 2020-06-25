@@ -33,8 +33,8 @@
                             <td>{{$item->tanggal_masuk}}</td>
                             <td>{{$item->panen}}</td>
                             <td>
-                                <a href="/update/{{$item->id_ayam}}" class="btn btn-primary">Update</a>
-                                <a href="/delete/{{$item->id_ayam}}" class="btn btn-danger">Delete</a>
+                                <a href="/ayam/edit/{{$item->id_ayam}}" class="btn btn-primary">Edit</a>
+                                <a href="/ayam/hapus/{{$item->id_ayam}}" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>
                         @endforeach

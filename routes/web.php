@@ -29,6 +29,7 @@ Route::middleware('auth')->group(function() {
     Route::get('/ayam', 'AyamController@index');
     Route::get('/ayam/tambah', 'AyamController@tambah');
     Route::post('/ayam/tambah', 'AyamController@proses');
+    Route::get('/ayam/hapus/{id}', 'AyamController@hapus');
 
     //Untuk melakukan Sync Database
     Route::get('/sync', 'SyncController@index');

@@ -12,7 +12,6 @@ class AyamController extends Controller
         $data = [
             'ayam' => Ayam::all()
         ];
-        flash('Data Telah Ditambahkan')->success();
         return view('ayam', $data);
     }
     public function tambah()
@@ -27,7 +26,14 @@ class AyamController extends Controller
     	$ayam->tanggal_masuk = $request->tanggalMasuk;
     	$ayam->panen = $request->panen;
     	$ayam->save();
-    	flash('Record Berhasil Ditambahkan')->important();
+    	flash('Record Berhasil Ditambahkan')->success();
+    	return redirect('/ayam');
+    }
+    public function hapus($id)
+    {
+    	$ayam = Ayam::find($id);
+    	$ayam->delete();
+    	flash('Data Berhsail Dihapus')->success();
     	return redirect('/ayam');
     }
 }

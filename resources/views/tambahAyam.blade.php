@@ -18,13 +18,13 @@
 						</div>
 						<div class="form-group col-md-4">
 							<label>Tanggal Masuk</label>
-							<input type="date" name="tanggalMasuk" class="form-control">
+							<input type="date" name="tanggalMasuk" class="form-control" value="{{date('Y-m-d')}}">
 						</div>
 						<div class="form-group col-md-2">
 							<label>Panen</label>
 							<select class="form-control" name="panen">
-								<option>Ya</option>
 								<option>Tidak</option>
+								<option>Ya</option>
 							</select>
 						</div>
 					</div>
