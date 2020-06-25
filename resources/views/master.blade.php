@@ -545,13 +545,13 @@ data-class="bg-happy-green sidebar-text-light">
             </li>
             <li class="app-sidebar__heading">Pembelian</li>
             <li>
-                <a href="forms-controls.html">
+                <a href="/pembelian">
                     <i class="metismenu-icon pe-7s-cart"></i>
                     Form Pembelian
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/pembelian/history">
                     <i class="metismenu-icon pe-7s-bookmarks"></i>
                     History Pembelian
                 </a>

@@ -31,8 +31,9 @@ Route::middleware('auth')->group(function() {
     Route::post('/ayam/tambah', 'AyamController@proses');
     Route::get('/ayam/hapus/{id}', 'AyamController@hapus');
 
-    
-
+    //Mengarahkan ke Form Pembelian
+    Route::get('/pembelian', 'PembelianController@index');
+    Route::post('/pembelian/tambah', 'PembelianController@tambah');
     //Melakukan Penjualan Ayam
 
     //Kasir

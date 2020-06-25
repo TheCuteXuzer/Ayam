@@ -33,11 +33,11 @@
 					</div>
 					<div class="form-group">
 						<label>Total Kg</label>
-						<input type="number" onkeydown="hitung_total()" name="totalKg" id="total_kg" class="form-control">
+						<input type="number" onkeyup="hitung_total()" name="totalKg" id="total_kg" class="form-control">
 					</div>
 					<div class="form-group">
 						<label>Harga /kg :</label>
-						<input type="number" name="hargaKg" onkeydown="hitung_total()" id="harga_kg" class="form-control">
+						<input type="number" name="hargaKg" onkeyup="hitung_total()" id="harga_kg" class="form-control">
 					</div>
 					<div class="form-group">
 						<label>Harga Total :</label>
