@@ -28,6 +28,7 @@
 
 <body>
     @include('sweet::alert')
+    @include('flash::message')
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
             <div class="app-header__logo">

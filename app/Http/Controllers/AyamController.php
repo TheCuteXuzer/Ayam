@@ -26,5 +26,7 @@ class AyamController extends Controller
     	$ayam->tanggal_masuk = $request->tanggalMasuk;
     	$ayam->panen = $request->panen;
     	$ayam->save();
+    	flash('Record Berhasil Ditambahkan')->important();
+    	redirect('/ayam');
     }
 }
