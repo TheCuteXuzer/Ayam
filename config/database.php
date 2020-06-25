@@ -50,7 +50,7 @@ return [
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'xuzertest'),
             'username' => env('DB_USERNAME', 'xuzer1'),
-            'password' => env('DB_PASSWORD', 'desahanpuki321'),
+            'password' => env('DB_PASSWORD', 'xuzer321'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
